@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MTMPzad</string>
+    <string name="text1">Zadajte uhol</string>
+    <string name="text2">Zadajte rýchlosť</string>
+    <string name="txtButton">Vypočítať</string>
+    <string name="errorMsgAngle">Uhol nesmie byť prázdny</string>
+    <string name="errorMsgSpeed">Rýchlosť nesmie byť prázdna</string>
+    <string name="checkBoxText">Rátať zo server</string>
+</resources>

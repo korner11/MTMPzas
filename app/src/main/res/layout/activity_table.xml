@@ -1,0 +1,45 @@
+<ScrollView android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <HorizontalScrollView
+        android:id="@+id/hscrll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/table_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graf"
+                android:layout_below="@id/table_main"
+                />
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animacia"
+                android:layout_below="@id/table_main"
+                android:layout_toRightOf="@id/btnGraph"
+                />
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>
