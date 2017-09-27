@@ -5,5 +5,8 @@
     <string name="txtButton">Vypočítať</string>
     <string name="errorMsgAngle">Uhol nesmie byť prázdny</string>
     <string name="errorMsgSpeed">Rýchlosť nesmie byť prázdna</string>
-    <string name="checkBoxText">Rátať zo server</string>
+    <string name="checkBoxText">Rátať zo servera</string>
+    <string name="graphY">Výška</string>
+    <string name="graphX">Čas</string>
+    <string name="graphTitle">Šikmý vrh</string>
 </resources>

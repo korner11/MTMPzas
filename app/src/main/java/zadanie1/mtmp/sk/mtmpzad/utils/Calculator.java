@@ -13,8 +13,6 @@ public class Calculator {
 
     public static Data calculate(double speed, double angle){
 
-
-
         List<Integer> xs= new ArrayList<>();
         List<Integer> ys= new ArrayList<>();
         List<Double> times = new ArrayList<>();
