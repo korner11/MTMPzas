@@ -1,77 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="zadanie1.mtmp.sk.mtmpzas.zadanie1.mtmp.sk.mtmpzad.MainActivity">
-
-    <TextView
-        android:layout_width="114dp"
-        android:layout_height="19dp"
-        android:text="@string/text1"
-        android:id="@+id/textView2"
-
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="97dp"
-        app:layout_constraintRight_toLeftOf="@+id/txtAngle"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
-
-    <EditText
-        android:id="@+id/txtAngle"
-        android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="83dp"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:id="@+id/linLayoutMain"
+        >
 
-    <EditText
-        android:id="@+id/txtSpeed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAngle" />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBoxText"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="15dp"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/username_text_input_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtAngle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:padding="15dp"
+            android:hint="@string/text1"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/username_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="116dp"
-        android:layout_height="24dp"
-        android:text="@string/text2"
-        android:layout_marginTop="28dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintRight_toLeftOf="@+id/txtSpeed"
-        android:layout_marginRight="4dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        <EditText
+            android:id="@+id/txtSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            android:padding="15dp"
+            android:hint="@string/text2"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnCalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txtButton"
+        android:elevation="0dp"
         android:onClick="passParams"
-        android:layout_marginTop="54dp"
-        app:layout_constraintTop_toBottomOf="@+id/txtSpeed"
-        android:layout_marginLeft="142dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:text="@string/txtButton"
+        android:layout_below="@id/linLayoutMain"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"/>
+</RelativeLayout>
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/checkBoxText"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="38dp"
-        android:layout_marginLeft="24dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+
+
+

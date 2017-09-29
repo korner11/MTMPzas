@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="zadanie1.mtmp.sk.mtmpzas.zadanie1.mtmp.sk.mtmpzad.AnimationActivity">
-
-</android.support.constraint.ConstraintLayout>
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+    <zadanie1.mtmp.sk.mtmpzad.utils.AnimatedView
+        android:id="@+id/anim_view"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"/>
+</LinearLayout>

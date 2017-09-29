@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
@@ -42,6 +43,9 @@ public class TableActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_table);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         btnGraph = (Button) findViewById(R.id.btnGraph);
         btnAnimation = (Button) findViewById(R.id.btnView);
@@ -200,9 +204,15 @@ public class TableActivity extends AppCompatActivity {
     }
     public void formatTxtView(TextView view){
         view.setTextAppearance(this,android.R.style.TextAppearance_Large);
-        view.setPadding(60,40,40,60);
+       // view.setPadding(60,40,40,60);
         view.setBackground(getDrawable(R.drawable.cell_shape));
         view.setGravity(Gravity.CENTER);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
     }
 
 }

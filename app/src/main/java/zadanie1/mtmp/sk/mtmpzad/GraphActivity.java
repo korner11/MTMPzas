@@ -2,6 +2,7 @@ package zadanie1.mtmp.sk.mtmpzad;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.helper.StaticLabelsFormatter;
@@ -19,6 +20,8 @@ public class GraphActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graph);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Data data = (Data) getIntent().getSerializableExtra("data");
         createGraph(data);
@@ -50,5 +53,11 @@ public class GraphActivity extends AppCompatActivity {
 
         LineGraphSeries<DataPoint> series = new LineGraphSeries<>(points);
         graph.addSeries(series);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
     }
 }
