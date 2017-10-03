@@ -3,8 +3,6 @@ package zadanie1.mtmp.sk.mtmpzad;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 
 import zadanie1.mtmp.sk.mtmpzad.utils.AnimatedView;
 import zadanie1.mtmp.sk.mtmpzad.utils.Data;
